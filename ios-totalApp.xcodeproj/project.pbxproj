@@ -12,6 +12,8 @@
 		7550CECB23FBDEDB00153EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7550CECA23FBDEDB00153EC1 /* Assets.xcassets */; };
 		7550CED123FBDEDB00153EC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7550CED023FBDEDB00153EC1 /* main.m */; };
 		7550CED923FBE2B100153EC1 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7550CED823FBE2B100153EC1 /* WelcomeViewController.m */; };
+		755B9D7E240BF2BC0063250A /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B9D7D240BF2BC0063250A /* MenuView.m */; };
+		755B9D80240CFB9D0063250A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755B9D7F240CFB9D0063250A /* MessageUI.framework */; };
 		7561CC212405F90A004094D7 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561CC202405F90A004094D7 /* MyButton.m */; };
 		7561CC2424061E25004094D7 /* ActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561CC2324061E25004094D7 /* ActivityModel.m */; };
 		7561CC2724061FC8004094D7 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561CC2624061FC8004094D7 /* ActivityTableViewCell.m */; };
@@ -21,9 +23,11 @@
 		7561CC332407FE13004094D7 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561CC322407FE13004094D7 /* MoreViewController.m */; };
 		7561CC362409FA01004094D7 /* SGLoadMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561CC352409FA01004094D7 /* SGLoadMoreView.m */; };
 		7561CC39240A4E5B004094D7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7561CC38240A4E5B004094D7 /* DetailViewController.m */; };
+		75880CD5240D39C8007117DA /* OtherTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75880CD4240D39C8007117DA /* OtherTestViewController.m */; };
 		75CD46B923FE606D0000D258 /* FoodOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CD46B823FE606D0000D258 /* FoodOne.m */; };
 		75CD46BC23FE62080000D258 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CD46BB23FE62080000D258 /* FoodTableViewCell.m */; };
 		75CD46BE23FE62850000D258 /* FoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CD46BD23FE62850000D258 /* FoodModel.m */; };
+		75E854C62411D6DF0081D758 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E854C52411D6DF0081D758 /* libsqlite3.dylib */; };
 		D3FBF6CCC89E667CC6BB876F /* libPods-ios-totalApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFE4FA919AE0673EA4EEC0 /* libPods-ios-totalApp.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,9 @@
 		7550CED023FBDEDB00153EC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7550CED723FBE26500153EC1 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		7550CED823FBE2B100153EC1 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		755B9D7C240BF2BC0063250A /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		755B9D7D240BF2BC0063250A /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		755B9D7F240CFB9D0063250A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7561CC1F2405F90A004094D7 /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		7561CC202405F90A004094D7 /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		7561CC2224061CF7004094D7 /* ActivityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityModel.h; sourceTree = "<group>"; };
@@ -57,12 +64,15 @@
 		7561CC352409FA01004094D7 /* SGLoadMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGLoadMoreView.m; sourceTree = "<group>"; };
 		7561CC37240A4E5B004094D7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		7561CC38240A4E5B004094D7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		75880CD3240D39C8007117DA /* OtherTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherTestViewController.h; sourceTree = "<group>"; };
+		75880CD4240D39C8007117DA /* OtherTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherTestViewController.m; sourceTree = "<group>"; };
 		75CD46B623FE5E680000D258 /* FoodOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodOne.h; sourceTree = "<group>"; };
 		75CD46B723FE5E930000D258 /* FoodModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodModel.h; sourceTree = "<group>"; };
 		75CD46B823FE606D0000D258 /* FoodOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodOne.m; sourceTree = "<group>"; };
 		75CD46BA23FE61800000D258 /* FoodTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
 		75CD46BB23FE62080000D258 /* FoodTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
 		75CD46BD23FE62850000D258 /* FoodModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodModel.m; sourceTree = "<group>"; };
+		75E854C52411D6DF0081D758 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		83EFE4FA919AE0673EA4EEC0 /* libPods-ios-totalApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-totalApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5D2116E67BC9F69D0368D4 /* Pods-ios-totalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-totalApp.debug.xcconfig"; path = "Target Support Files/Pods-ios-totalApp/Pods-ios-totalApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E854C62411D6DF0081D758 /* libsqlite3.dylib in Frameworks */,
+				755B9D80240CFB9D0063250A /* MessageUI.framework in Frameworks */,
 				D3FBF6CCC89E667CC6BB876F /* libPods-ios-totalApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +94,8 @@
 		0CD7832F61DB5F7D7C6CAF58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75E854C52411D6DF0081D758 /* libsqlite3.dylib */,
+				755B9D7F240CFB9D0063250A /* MessageUI.framework */,
 				83EFE4FA919AE0673EA4EEC0 /* libPods-ios-totalApp.a */,
 			);
 			name = Frameworks;
@@ -111,12 +125,16 @@
 				7550CEBE23FBDED700153EC1 /* AppDelegate.h */,
 				7550CEBF23FBDED700153EC1 /* AppDelegate.m */,
 				7550CEC423FBDED700153EC1 /* ViewController.h */,
+				75880CD3240D39C8007117DA /* OtherTestViewController.h */,
+				75880CD4240D39C8007117DA /* OtherTestViewController.m */,
 				7561CC342409FA01004094D7 /* SGLoadMoreView.h */,
 				7561CC352409FA01004094D7 /* SGLoadMoreView.m */,
 				7561CC312407FE13004094D7 /* MoreViewController.h */,
 				7561CC322407FE13004094D7 /* MoreViewController.m */,
 				7561CC37240A4E5B004094D7 /* DetailViewController.h */,
 				7561CC38240A4E5B004094D7 /* DetailViewController.m */,
+				755B9D7C240BF2BC0063250A /* MenuView.h */,
+				755B9D7D240BF2BC0063250A /* MenuView.m */,
 				7550CEC523FBDED700153EC1 /* ViewController.m */,
 				7550CECA23FBDEDB00153EC1 /* Assets.xcassets */,
 				7550CECF23FBDEDB00153EC1 /* Info.plist */,
@@ -253,6 +271,7 @@
 				7561CC2424061E25004094D7 /* ActivityModel.m in Sources */,
 				7561CC39240A4E5B004094D7 /* DetailViewController.m in Sources */,
 				7550CEC023FBDED700153EC1 /* AppDelegate.m in Sources */,
+				755B9D7E240BF2BC0063250A /* MenuView.m in Sources */,
 				7561CC2724061FC8004094D7 /* ActivityTableViewCell.m in Sources */,
 				7561CC332407FE13004094D7 /* MoreViewController.m in Sources */,
 				7561CC302407A38F004094D7 /* StoreModel.m in Sources */,
@@ -264,6 +283,7 @@
 				7561CC212405F90A004094D7 /* MyButton.m in Sources */,
 				7561CC362409FA01004094D7 /* SGLoadMoreView.m in Sources */,
 				7561CC2D2407A35E004094D7 /* StoreTableViewCell.m in Sources */,
+				75880CD5240D39C8007117DA /* OtherTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

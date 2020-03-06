@@ -16,6 +16,7 @@
 #import "ActivityModel.h"
 #import "StoreTableViewCell.h"
 #import "MoreViewController.h"
+#import "OtherTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 @property(nonatomic,strong) UIPageControl* pageControl;
@@ -68,6 +69,11 @@
     [tv addSubview:sv];
     [tv addSubview:self.pageControl];
     [self setTitle:@"首页"];
+    
+    [tv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsZero);
+    }];
+    
     [self initData];
     
     self.view.backgroundColor = [UIColor blackColor];
@@ -255,7 +261,7 @@
     }
     else if (section == 1)
     {
-        height = 0;
+        height = 30;
     }
     return height;
 }
@@ -319,6 +325,37 @@
 //        NSLog(@"tableview width: %f", tableView.frame.size.width);
         
     }
+    else if (section == 1)
+    {
+        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 30)];
+        view.backgroundColor = [UIColor blueColor];
+        UILabel* titleLab = [[UILabel alloc] init];
+        [titleLab setText:@"榜单"];
+        titleLab.textAlignment = NSTextAlignmentLeft;
+        titleLab.font = [UIFont systemFontOfSize:12];
+        titleLab.textColor = [UIColor whiteColor];
+        [view addSubview:titleLab];
+        
+        MyButton* moreBtn = [[MyButton alloc] init];
+        [moreBtn setTitle:@"更多" forState:UIControlStateNormal];
+        moreBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+        [view addSubview:moreBtn];
+        [moreBtn setImage:[UIImage imageNamed:@"more"] forState:UIControlStateNormal];
+        [moreBtn addTarget:self action:@selector(showOrderMore) forControlEvents:UIControlEventTouchUpInside];
+        [titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@75);
+            make.height.equalTo(@15);
+            make.left.equalTo(view.mas_left).offset(5);
+        make.top.equalTo(view.mas_top).offset((view.frame.size.height-15)/2);
+        }];
+        
+        [moreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@75);
+            make.height.equalTo(@24);
+        make.top.equalTo(view.mas_top).offset((view.frame.size.height-24)/2);
+            make.right.equalTo(view.mas_right).offset(-5);
+        }];
+    }
     else
     {
         view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 1)];
@@ -344,9 +381,16 @@
 -(void)showMore
 {
     MoreViewController* mvc = [[MoreViewController alloc] init];
-    mvc.title = @"更多";
+    mvc.title = @"推荐";
     [self.navigationController pushViewController:mvc animated:NO];
     
+}
+
+-(void)showOrderMore
+{
+    OtherTestViewController* otvc = [[OtherTestViewController alloc] init];
+    otvc.title = @"杂乱知识点测试";
+    [self.navigationController pushViewController:otvc animated:NO];
 }
 
 //- (void)viewDidAppear:(BOOL)animated
